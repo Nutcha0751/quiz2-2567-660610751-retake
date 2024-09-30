@@ -27,15 +27,15 @@ export default function Comment({
           style={{ objectFit: "cover" }}
         />
         <div
-          className="rounded rounded-3 p-2"
-          style={{ backgroundColor: "#B0B3B8" }}
+          className="rounded rounded-3 p-2 text-white"
+          style={{ backgroundColor: "#3A3B3C" }}
         >
           <span className="fw-semibold">{username}</span>
           <br />
-          <span>{commentTitle}</span>
+          <span >{commentTitle}</span>
           <div className="d-flex align-items-center gap-1">
             {likes > 0 && <img src="/like.svg" width={20}></img>}
-            {likes > 0 && <span className="text-muted">{likes}</span>}
+            {likes > 0 && <span style={{ color: "#B0B3B8" }}>{likes}</span>}
           </div>
         </div>
       </div>

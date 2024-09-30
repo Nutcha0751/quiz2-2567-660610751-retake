@@ -12,15 +12,15 @@ export default function Reply({ ImagePath, username, replyTitle, likeNum }:any) 
       style={{ objectFit: "cover" }}
     />
     <div
-      className="rounded rounded-3 p-2"
-      style={{ backgroundColor: "#B0B3B8" }}
+      className="rounded rounded-3 p-2 text-white"
+      style={{ backgroundColor: "#3A3B3C" }}
     >
       <span className="fw-semibold">{username}</span>
       <br />
       <span>{replyTitle}</span>
       <div className="d-flex align-items-center gap-1">
       { likeNum > 0 && <img src="/like.svg" width={20}></img> }
-        { likeNum > 0 && <span className="text-muted">{likeNum} คน</span>}
+        { likeNum > 0 && <span style={{ color: "#B0B3B8" }}>{likeNum} คน</span>}
       </div>
     </div>
   </div>);
